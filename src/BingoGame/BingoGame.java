@@ -6,12 +6,12 @@ import java.util.List;
 import java.util.Random;
 
 public class BingoGame {
-    private List<Integer> listOfPossibleNumbers = new ArrayList<>(75);
+    private List<Integer> listOfPossibleNumbers;
     private final Random random = new Random();
     private final List<Column> columns = new ArrayList<>();
 
-    public BingoGame() {
-        populateListOfPossibleNumbers();
+    public BingoGame(NumberGenerator numberGenerator) {
+        listOfPossibleNumbers = numberGenerator.generate();
     }
 
     public int callNumber() {
@@ -39,13 +39,6 @@ public class BingoGame {
             System.out.print(column.getRowNumber(i) + "\t");
         }
         System.out.println();
-    }
-
-    private void populateListOfPossibleNumbers() {
-        for (int i = 0; i < 75; i++) {
-            listOfPossibleNumbers.add(i + 1);
-        }
-        Collections.shuffle(listOfPossibleNumbers);
     }
 
     private Column createColumn(int min, int max) {

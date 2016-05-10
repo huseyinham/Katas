@@ -2,6 +2,7 @@ package BingoGameTest;
 
 import BingoGame.BingoGame;
 import BingoGame.Column;
+import BingoGame.NumberGenerator;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
@@ -15,7 +16,7 @@ public class BingoGameTest {
 
     @Before
     public void initialize() {
-        game = new BingoGame();
+        game = new BingoGame(new NumberGenerator());
     }
 
     @Test
@@ -45,16 +46,13 @@ public class BingoGameTest {
         }
 
         List<Column> bingoCardColumns = new ArrayList<>();
-        bingoCardColumns.add(new Column(1, 15, allPossibleNumbers));
-
         game.generateStartingBingoCard();
-        for(int i = 0; i < bingoCardColumns.size(); i++){
+        for(int i = 0; i <= 25; i++){
+            bingoCardColumns.add(new Column(1, 15, allPossibleNumbers));
             //Assert.assertTrue(bingoCardColumns.get(i) >= 1 && bingoCardColumns.get(i) <=15);
         }
 
-        System.out.println(bingoCardColumns.get(0));
-        game.printCard();
-
-
+        System.out.println(bingoCardColumns.get(1).asString());
+        //game.printCard();
     }
 }
