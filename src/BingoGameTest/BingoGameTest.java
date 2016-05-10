@@ -1,31 +1,44 @@
 package BingoGameTest;
 
 import BingoGame.BingoGame;
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class BingoGameTest {
 
+    private BingoGame game;
+
+    @Before
+    public void initialize(){
+        game = new BingoGame();
+    }
+
     @Test
     public void returnsSingleNumberBetweenOneAndSeventyFive(){
-        BingoGame game = new BingoGame();
         int pickBall = game.callNumber();
-        System.out.println(pickBall);
         Assert.assertTrue(pickBall >= 1 && pickBall <= 75);
     }
 
     @Test
     public void returnsAllNumbersBetweenOneAndSeventyFiveOnce(){
-        BingoGame game = new BingoGame();
-        ArrayList<Integer> callArray = new ArrayList<Integer>(75);
-        for (int i = 1; i <= 75; i++) {
-            callArray.add(i);
+        List<Integer> results = new ArrayList<>(75);
+        // calls the method to draw a ball 75 times
+        for (int i = 0; i < 75; i++) {
+            results.add(game.callNumber());
         }
-
+        // checks that the arraylist contains one of each numbers up to 75
         for (int i=0;i<75;i++) {
-            Assert.assertTrue(callArray.get(i) >= 1 && callArray.get(i) <= 75);
+            Assert.assertTrue(results.contains(i+1));
         }
+    }
+
+    @Test
+    public void generateABlankBingoCard(){
+        game.generateBlankBingoCard();
+        game.printCard();
     }
 }

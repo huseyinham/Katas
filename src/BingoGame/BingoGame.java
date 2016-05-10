@@ -1,26 +1,54 @@
 package BingoGame;
 
 import java.util.ArrayList;
-import java.util.concurrent.ThreadLocalRandom;
+import java.util.Collections;
+import java.util.List;
+import java.util.Random;
 
 public class BingoGame {
-    private int minPossibleBallNumber = 1;
-    private int maxPossibleBallNumber = 75;
-    private ArrayList<Integer> listOfPossibleNumbers = new ArrayList<Integer>(75);
+    private List<Integer> listOfPossibleNumbers = new ArrayList<>(75);
+    private final Random random = new Random();
+    private final List<Column> columns = new ArrayList<>();
 
-    public BingoGame(){
+    public BingoGame() {
         populateListOfPossibleNumbers();
     }
 
     public int callNumber() {
-        int rolledNumber = ThreadLocalRandom.current().nextInt(minPossibleBallNumber, maxPossibleBallNumber + 1);
-        maxPossibleBallNumber -= 1;
+        int rolledNumber = random.nextInt(listOfPossibleNumbers.size());
         return listOfPossibleNumbers.remove(rolledNumber);
+    }
+
+    public void generateBlankBingoCard() {
+        columns.add(createColumn(1, 15));
+        columns.add(createColumn(16, 30));
+        columns.add(createColumn(31, 45));
+        columns.add(createColumn(46, 60));
+        columns.add(createColumn(61, 75));
+    }
+
+    public void printCard() {
+        int rowCount = columns.get(1).getRowCount();
+        for (int i = rowCount-1; i >= 0; i--) {
+            printRow(i);
+        }
+    }
+
+    private void printRow(int i) {
+        for(Column column : columns){
+            System.out.print(column.getRowNumber(i) + "\t");
+        }
+        System.out.println();
     }
 
     private void populateListOfPossibleNumbers() {
         for (int i = 0; i < 75; i++) {
-            listOfPossibleNumbers.add(i+1);
+            listOfPossibleNumbers.add(i + 1);
         }
+        Collections.shuffle(listOfPossibleNumbers);
+    }
+
+    private Column createColumn(int min, int max) {
+        return new Column(min, max, listOfPossibleNumbers);
     }
 }
