@@ -12,6 +12,7 @@ public class Column {
         this.numbers = getColumnNumbers(min, max);
     }
 
+
     public Integer getRowNumber(int rowNumber) {
         return numbers.get(rowNumber);
     }

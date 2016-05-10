@@ -19,7 +19,7 @@ public class BingoGame {
         return listOfPossibleNumbers.remove(rolledNumber);
     }
 
-    public void generateBlankBingoCard() {
+    public void generateStartingBingoCard() {
         columns.add(createColumn(1, 15));
         columns.add(createColumn(16, 30));
         columns.add(createColumn(31, 45));
@@ -28,7 +28,7 @@ public class BingoGame {
     }
 
     public void printCard() {
-        int rowCount = columns.get(1).getRowCount();
+        int rowCount = columns.get(0).getRowCount();
         for (int i = rowCount-1; i >= 0; i--) {
             printRow(i);
         }
