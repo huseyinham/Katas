@@ -5,16 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fc419e23-299f-4756-b10b-42317b284be3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BingoGame/Card.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BingoGame/NumberGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BingoGameTest/CardTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/BingoGameTest/NumberGeneratorTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Katas/BingoGame/Column.class" afterPath="$PROJECT_DIR$/out/production/Katas/BingoGame/Column.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TennisGame/TennisGame.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/TennisGameTest/TennisGameTest.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/Katas/BingoGameTest/CardTest.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Katas/BingoGame/BingoGame.class" afterPath="$PROJECT_DIR$/out/production/Katas/BingoGame/BingoGame.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Katas/BingoGameTest/BingoGameTest.class" afterPath="$PROJECT_DIR$/out/production/Katas/BingoGameTest/BingoGameTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BingoGame/BingoGame.java" afterPath="$PROJECT_DIR$/src/BingoGame/BingoGame.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BingoGame/Column.java" afterPath="$PROJECT_DIR$/src/BingoGame/Column.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java" afterPath="$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/BingoGameTest/CardTest.java" afterPath="$PROJECT_DIR$/src/BingoGameTest/CardTest.java" />
     </list>
     <ignored path="Katas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,19 +29,41 @@
     <option name="PATCH_PATH" value="" />
   </component>
   <component name="DockManager">
-    <window id="2">
+    <window id="1">
       <content type="file-editors">
         <state>
           <leaf>
-            <file leaf-file-name="BingoGameTest.java" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java">
+            <file leaf-file-name="CardTest.java" pinned="false" current-in-tab="true">
+              <entry file="file://$PROJECT_DIR$/src/BingoGameTest/CardTest.java">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="952">
-                    <caret line="56" column="5" selection-start-line="40" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
+                  <state relative-caret-position="204">
+                    <caret line="12" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="7" />
                     <folding>
                       <element signature="imports" expanded="true" />
-                      <element signature="e#337#338#0" expanded="true" />
-                      <element signature="e#396#397#0" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="NumberGeneratorTest.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/BingoGameTest/NumberGeneratorTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="255">
+                    <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
+                    </folding>
+                  </state>
+                </provider>
+              </entry>
+            </file>
+            <file leaf-file-name="BingoGameTest.java" pinned="false" current-in-tab="false">
+              <entry file="file://$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java">
+                <provider selected="true" editor-type-id="text-editor">
+                  <state relative-caret-position="646">
+                    <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
+                    <folding>
+                      <element signature="imports" expanded="true" />
                     </folding>
                   </state>
                 </provider>
@@ -63,26 +83,14 @@
       <file leaf-file-name="BingoGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BingoGame/BingoGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+            <state relative-caret-position="527">
+              <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#364#365#0" expanded="true" />
-                <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
-                <element signature="e#1339#1340#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="NumberGeneratorTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/BingoGameTest/NumberGeneratorTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="56" selection-start-line="15" selection-start-column="56" selection-end-line="15" selection-end-column="56" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#334#335#0" expanded="true" />
+                <element signature="e#400#401#0" expanded="true" />
+                <element signature="e#1243#1244#0" expanded="true" />
+                <element signature="e#1309#1310#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -93,18 +101,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="136">
               <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CardTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/BingoGameTest/CardTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,15 +125,48 @@
       <file leaf-file-name="Column.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/BingoGame/Column.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
+            <state relative-caret-position="391">
               <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#419#420#0" expanded="true" />
-                <element signature="e#464#465#0" expanded="true" />
-                <element signature="e#500#501#0" expanded="true" />
-                <element signature="e#537#538#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TennisGame.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/TennisGame/TennisGame.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="186">
+              <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+              <folding>
+                <element signature="e#1066#1067#0" expanded="true" />
+                <element signature="e#1103#1104#0" expanded="true" />
+                <element signature="e#1141#1142#0" expanded="true" />
+                <element signature="e#1178#1179#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TennisGameTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/TennisGameTest/TennisGameTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="17">
+              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -178,10 +207,12 @@
         <option value="$PROJECT_DIR$/src/BingoGame/Column.java" />
         <option value="$PROJECT_DIR$/src/BingoGame/NumberGenerator.java" />
         <option value="$PROJECT_DIR$/src/BingoGameTest/NumberGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/BingoGame/BingoGame.java" />
         <option value="$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java" />
         <option value="$PROJECT_DIR$/src/BingoGame/Card.java" />
+        <option value="$PROJECT_DIR$/src/BingoGame/BingoGame.java" />
         <option value="$PROJECT_DIR$/src/BingoGameTest/CardTest.java" />
+        <option value="$PROJECT_DIR$/src/TennisGame/TennisGame.java" />
+        <option value="$PROJECT_DIR$/src/TennisGameTest/TennisGameTest.java" />
       </list>
     </option>
   </component>
@@ -224,8 +255,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -257,22 +286,8 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Katas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Katas" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="BingoGameTest" />
+              <option name="myItemId" value="TennisGameTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -290,12 +305,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="BingoGame" />
+              <option name="myItemId" value="TennisGame" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Katas" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -316,7 +347,7 @@
       <recent name="C:\Users\hhami\IdeaProjects\Katas\src\connectFour" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.NumberGeneratorTest">
+  <component name="RunManager" selected="JUnit.TennisGameTest">
     <configuration default="false" name="BingoGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -343,84 +374,6 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="BingoGameTest.returnsAllNumbersBetweenOneAndSeventyFiveOnce" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="BingoGameTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Katas" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="BingoGameTest" />
-      <option name="MAIN_CLASS_NAME" value="BingoGameTest.BingoGameTest" />
-      <option name="METHOD_NAME" value="returnsAllNumbersBetweenOneAndSeventyFiveOnce" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BingoGameTest.returnsSingleNumberBetweenOneAndSeventyFive" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="BingoGameTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Katas" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="BingoGameTest" />
-      <option name="MAIN_CLASS_NAME" value="BingoGameTest.BingoGameTest" />
-      <option name="METHOD_NAME" value="returnsSingleNumberBetweenOneAndSeventyFive" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="BingoGameTest.generateAStartingBingoCard" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="BingoGameTest.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="Katas" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="BingoGameTest" />
-      <option name="MAIN_CLASS_NAME" value="BingoGameTest.BingoGameTest" />
-      <option name="METHOD_NAME" value="generateAStartingBingoCard" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
     <configuration default="false" name="NumberGeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -435,6 +388,84 @@
       <option name="MAIN_CLASS_NAME" value="BingoGameTest.NumberGeneratorTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="BingoGameTest in Katas" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="BingoGameTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Katas" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="BingoGameTest" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TennisGameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="TennisGameTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Katas" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="TennisGameTest" />
+      <option name="MAIN_CLASS_NAME" value="TennisGameTest.TennisGameTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TennisGameTest.blankScoreAtStartGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="TennisGameTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="Katas" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="TennisGameTest" />
+      <option name="MAIN_CLASS_NAME" value="TennisGameTest.TennisGameTest" />
+      <option name="METHOD_NAME" value="blankScoreAtStartGame" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -683,18 +714,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.BingoGameTest" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.BingoGameTest.returnsAllNumbersBetweenOneAndSeventyFiveOnce" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.BingoGameTest.returnsSingleNumberBetweenOneAndSeventyFive" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.BingoGameTest.generateAStartingBingoCard" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.NumberGeneratorTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.NumberGeneratorTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.BingoGameTest in Katas" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TennisGameTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TennisGameTest.blankScoreAtStartGame" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.NumberGeneratorTest" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.BingoGameTest.generateAStartingBingoCard" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TennisGameTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TennisGameTest.blankScoreAtStartGame" />
         <item index="2" class="java.lang.String" itemvalue="JUnit.BingoGameTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.BingoGameTest.returnsSingleNumberBetweenOneAndSeventyFive" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.BingoGameTest.returnsAllNumbersBetweenOneAndSeventyFiveOnce" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.NumberGeneratorTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.BingoGameTest in Katas" />
       </list>
     </recent_temporary>
   </component>
@@ -715,35 +746,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="BingoGameTest - 2016.05.10 at 16h 41m 35s.xml">
-      <configuration name="BingoGameTest" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 49m 22s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest - 2016.05.10 at 16h 41m 44s.xml">
-      <configuration name="BingoGameTest" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 49m 53s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest - 2016.05.10 at 16h 43m 33s.xml">
-      <configuration name="BingoGameTest" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 54m 11s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest - 2016.05.10 at 16h 43m 50s.xml">
-      <configuration name="BingoGameTest" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 54m 48s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest - 2016.05.10 at 16h 48m 36s.xml">
-      <configuration name="BingoGameTest" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 54m 57s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest_generateAStartingBingoCard - 2016.05.10 at 16h 43m 47s.xml">
-      <configuration name="BingoGameTest.generateAStartingBingoCard" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 55m 04s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest_generateAStartingBingoCard - 2016.05.10 at 16h 43m 59s.xml">
-      <configuration name="BingoGameTest.generateAStartingBingoCard" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 57m 25s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest_generateAStartingBingoCard - 2016.05.10 at 16h 55m 25s.xml">
-      <configuration name="BingoGameTest.generateAStartingBingoCard" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 57m 36s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="BingoGameTest_generateAStartingBingoCard - 2016.05.10 at 16h 55m 57s.xml">
-      <configuration name="BingoGameTest.generateAStartingBingoCard" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 59m 34s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="NumberGeneratorTest - 2016.05.10 at 17h 06m 24s.xml">
-      <configuration name="NumberGeneratorTest" configurationId="JUnit" />
+    <history-entry file="TennisGameTest - 2016.05.11 at 16h 59m 57s.xml">
+      <configuration name="TennisGameTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -763,7 +794,6 @@
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.118229166" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -774,6 +804,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289597" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -798,21 +829,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/connectFour/ConnectFour.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/connectFour/NoFreeSlotException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="49" selection-start-line="2" selection-start-column="49" selection-end-line="2" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/connectFourTest/ConnectFourTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -1089,14 +1105,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/connectFour/Player.java" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/connectFour/ConnectFour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1343">
@@ -1105,27 +1113,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BingoGame/Column.java">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#419#420#0" expanded="true" />
-            <element signature="e#464#465#0" expanded="true" />
-            <element signature="e#500#501#0" expanded="true" />
-            <element signature="e#537#538#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/BingoGame/NumberGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="17">
+          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1139,16 +1131,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BingoGame/BingoGame.java">
+    <entry file="file://$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
+        <state relative-caret-position="646">
+          <caret line="40" column="4" selection-start-line="40" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#364#365#0" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
-            <element signature="e#1339#1340#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1165,24 +1153,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/BingoGame/BingoGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#334#335#0" expanded="true" />
+            <element signature="e#400#401#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1309#1310#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/BingoGameTest/CardTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="4" selection-end-line="15" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BingoGameTest/BingoGameTest.java">
+    <entry file="file://$PROJECT_DIR$/src/BingoGame/NumberGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="56" column="5" selection-start-line="40" selection-start-column="4" selection-end-line="56" selection-end-column="5" />
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/BingoGame/Column.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TennisGame/TennisGame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="11" column="19" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="19" />
+          <folding>
+            <element signature="e#1066#1067#0" expanded="true" />
+            <element signature="e#1103#1104#0" expanded="true" />
+            <element signature="e#1141#1142#0" expanded="true" />
+            <element signature="e#1178#1179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TennisGameTest/TennisGameTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

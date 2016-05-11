@@ -10,8 +10,10 @@ public class CardTest {
     NumberGenerator numberGenerator = new NumberGenerator();
     Card card = new Card(numberGenerator.generate());
 
-    @Test
-
+    /*@Test
+    public void generateAStartingBingoCardINCARDTEST() {
+        card.
+    }*/
 
 
 }
