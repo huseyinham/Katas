@@ -4,12 +4,19 @@ public class TennisGame {
 
     private int playerOneScore;
     private int playerTwoScore;
-    private boolean playerOneHasScored;
-    private boolean playerTwoHasScored;
+    private static final int ace = 65;
 
     public void main(String[] args) {
-        score(true, playerOneScore);
-        score(false, playerTwoScore);
+        //enter '1' when player one scores or '2' if player two scores
+        //if scanner = '1' then
+        score(true, playerOneScore, playerTwoScore);
+        //else if scanner = '2' then
+        score(false, playerTwoScore, playerOneScore);
+
+        checkIfAce();
+    }
+
+    private void checkIfAceLost() {
     }
 
     public void startGame() {
@@ -17,9 +24,9 @@ public class TennisGame {
         playerTwoScore = 0;
     }
 
-    public int score(boolean playerOneHasScored, int scoringPlayersCurrentScore) {
+    public int score(boolean playerOneHasScored, int scoringPlayersCurrentScore, int otherPlayersCurrentScore) {
         if (playerOneHasScored) {
-            playerOneScore = playerOneScorePoint(scoringPlayersCurrentScore);
+            playerOneScore = playerOneScorePoint(scoringPlayersCurrentScore, otherPlayersCurrentScore);
             return playerOneScore;
         } else {
             playerTwoScore = playerTwoScorePoint(scoringPlayersCurrentScore);
@@ -27,14 +34,41 @@ public class TennisGame {
         return playerTwoScore;
     }
 
-    private int playerOneScorePoint(int playerOneScore) {
-        playerOneScore += 15;
+    private int playerOneScorePoint(int playerOneScore, int otherPlayersScore) {
+        if (playerOneScore == 40 && otherPlayersScore == 40) {
+            playerOneScore = ace;
+        } else if (playerOneScore == 40 && otherPlayersScore == 65) {
+            playerTwoScore = 40;
+        } else if (playerOneScore == 30) {
+            playerOneScore += 10;
+        } else {
+            playerOneScore += 15;
+        }
         return playerOneScore;
     }
 
     private int playerTwoScorePoint(int playerTwoScore) {
-        playerTwoScore += 15;
+        if (playerTwoScore == 40) {
+            playerTwoScore = ace;
+        } else if (playerTwoScore == 30) {
+            playerTwoScore += 10;
+        } else {
+            playerTwoScore += 15;
+        }
         return playerTwoScore;
+    }
+
+    private void checkIfAce() {
+        if (playerOneScore == 65) {
+            getAce(playerOneScore);
+        } else if (playerTwoScore == 65) {
+            getAce(playerTwoScore);
+        }
+    }
+
+    private String getAce(int playerScore) {
+        System.out.println(String.valueOf(playerScore));
+        return String.valueOf(playerScore);
     }
 
     public int getPlayerOneScore() {
