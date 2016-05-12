@@ -12,11 +12,9 @@ public class TennisGame {
         score(true, playerOneScore, playerTwoScore);
         //else if scanner = '2' then
         score(false, playerTwoScore, playerOneScore);
+        hasWon(playerOneScore, playerTwoScore);
 
         checkIfAce();
-    }
-
-    private void checkIfAceLost() {
     }
 
     public void startGame() {
@@ -29,7 +27,7 @@ public class TennisGame {
             playerOneScore = playerOneScorePoint(scoringPlayersCurrentScore, otherPlayersCurrentScore);
             return playerOneScore;
         } else {
-            playerTwoScore = playerTwoScorePoint(scoringPlayersCurrentScore);
+            playerTwoScore = playerTwoScorePoint(scoringPlayersCurrentScore, otherPlayersCurrentScore);
         }
         return playerTwoScore;
     }
@@ -47,9 +45,11 @@ public class TennisGame {
         return playerOneScore;
     }
 
-    private int playerTwoScorePoint(int playerTwoScore) {
-        if (playerTwoScore == 40) {
+    private int playerTwoScorePoint(int playerTwoScore, int otherPlayersScore) {
+        if (playerTwoScore == 40 && otherPlayersScore <= 40) {
             playerTwoScore = ace;
+        } else if (playerTwoScore == 40 && otherPlayersScore == 65) {
+            playerOneScore = 40;
         } else if (playerTwoScore == 30) {
             playerTwoScore += 10;
         } else {
@@ -77,5 +77,9 @@ public class TennisGame {
 
     public int getPlayerTwoScore() {
         return playerTwoScore;
+    }
+
+    public boolean hasWon(int scorer, int otherPlayer) {
+        return scorer == 40 && otherPlayer < 40 || scorer == 65 && otherPlayer == 40;
     }
 }

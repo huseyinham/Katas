@@ -47,7 +47,7 @@ public class TennisGameTest {
 
     @Test
     public void scoreValueOfAceForPlayerOne() {
-        tennisGame.score(true, 40, 0);
+        tennisGame.score(true, 40, 40);
         Assert.assertEquals(65, tennisGame.getPlayerOneScore());
     }
 
@@ -59,7 +59,7 @@ public class TennisGameTest {
 
     @Test
     public void returnLetterAForPlayerOneInsteadOf65() {
-        tennisGame.score(true, 40, 0);
+        tennisGame.score(true, 40, 40);
         Assert.assertEquals('A', tennisGame.getPlayerOneScore());
     }
 
@@ -67,5 +67,41 @@ public class TennisGameTest {
     public void returnLetterAForPlayerTwoInsteadOf65() {
         tennisGame.score(false, 40, 0);
         Assert.assertEquals('A', tennisGame.getPlayerTwoScore());
+    }
+
+    @Test
+    public void whilePlayerTwoHasAceReducePlayerTwoScoreIfPlayerOneScores() {
+        tennisGame.score(true, 40, 65);
+        Assert.assertEquals(40, tennisGame.getPlayerTwoScore());
+    }
+
+    @Test
+    public void whilePlayerOneHasAceReducePlayerOneScoreIfPlayerTwoScores() {
+        tennisGame.score(false, 40, 65);
+        Assert.assertEquals(40, tennisGame.getPlayerOneScore());
+    }
+
+    @Test
+    public void playerOneWinsFrom40() {
+        //tennisGame.score(true, 40, 30);
+        Assert.assertEquals(true, tennisGame.hasWon(40, 30));
+    }
+
+    /*@Test
+    public void playerTwoWinsFrom40() {
+        tennisGame.score(true, 40, 30);
+        Assert.assertEquals(true, tennisGame.hasWon(40, 30));
+    }*/
+
+    @Test
+    public void playerOneWinsFromAce() {
+        //tennisGame.score(true, 40, 30);
+        Assert.assertEquals(true, tennisGame.hasWon(65, 40));
+    }
+
+    @Test
+    public void playerTwoWinsFromAce() {
+        //tennisGame.score(true, 40, 30);
+        Assert.assertEquals(true, tennisGame.hasWon(65, 40));
     }
 }
