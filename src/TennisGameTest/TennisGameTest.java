@@ -16,92 +16,150 @@ public class TennisGameTest {
 
     @Test
     public void blankScoreAtStartGame() {
-        //tennisGame.startGame();
-        Assert.assertEquals(0, tennisGame.getPlayerOneScore());
-        Assert.assertEquals(0, tennisGame.getPlayerTwoScore());
+        Assert.assertEquals("0", tennisGame.getPlayerOneScore());
+        Assert.assertEquals("0", tennisGame.getPlayerTwoScore());
     }
 
     @Test
     public void scorePointForPlayerOne() {
-        tennisGame.score(true, 0, 0);
-        Assert.assertEquals(15, tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        Assert.assertEquals("15", tennisGame.getPlayerOneScore());
     }
 
     @Test
     public void scorePointForPlayerTwo() {
-        tennisGame.score(false, 15, 0);
-        Assert.assertEquals(30, tennisGame.getPlayerTwoScore());
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        Assert.assertEquals("30", tennisGame.getPlayerTwoScore());
     }
 
     @Test
     public void score40ForPlayerOne() {
-        tennisGame.score(true, 30, 0);
-        Assert.assertEquals(40, tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        Assert.assertEquals("40", tennisGame.getPlayerOneScore());
     }
 
     @Test
     public void score40ForPlayerTwo() {
-        tennisGame.score(false, 30, 0);
-        Assert.assertEquals(40, tennisGame.getPlayerTwoScore());
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        Assert.assertEquals("40", tennisGame.getPlayerTwoScore());
     }
 
     @Test
     public void scoreValueOfAceForPlayerOne() {
-        tennisGame.score(true, 40, 40);
-        Assert.assertEquals(65, tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+
+        tennisGame.playerOneScorePoint();
+        Assert.assertEquals("A", tennisGame.getPlayerOneScore());
     }
 
     @Test
     public void scoreValueOfAceForPlayerTwo() {
-        tennisGame.score(false, 40, 0);
-        Assert.assertEquals(65, tennisGame.getPlayerTwoScore());
-    }
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
 
-    @Test
-    public void returnLetterAForPlayerOneInsteadOf65() {
-        tennisGame.score(true, 40, 40);
-        Assert.assertEquals('A', tennisGame.getPlayerOneScore());
-    }
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
 
-    @Test
-    public void returnLetterAForPlayerTwoInsteadOf65() {
-        tennisGame.score(false, 40, 0);
-        Assert.assertEquals('A', tennisGame.getPlayerTwoScore());
+        tennisGame.playerTwoScorePoint();
+        Assert.assertEquals("A", tennisGame.getPlayerTwoScore());
     }
 
     @Test
     public void whilePlayerTwoHasAceReducePlayerTwoScoreIfPlayerOneScores() {
-        tennisGame.score(true, 40, 65);
-        Assert.assertEquals(40, tennisGame.getPlayerTwoScore());
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+
+        tennisGame.playerOneScorePoint();
+        Assert.assertEquals("40", tennisGame.getPlayerTwoScore());
     }
 
     @Test
     public void whilePlayerOneHasAceReducePlayerOneScoreIfPlayerTwoScores() {
-        tennisGame.score(false, 40, 65);
-        Assert.assertEquals(40, tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        Assert.assertEquals("40", tennisGame.getPlayerOneScore());
     }
 
     @Test
     public void playerOneWinsFrom40() {
-        //tennisGame.score(true, 40, 30);
-        Assert.assertEquals(true, tennisGame.hasWon(40, 30));
+        tennisGame.playerOneScorePoint();
+        System.out.println(tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        System.out.println(tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        System.out.println(tennisGame.getPlayerOneScore());
+        tennisGame.playerOneScorePoint();
+        System.out.println(tennisGame.getPlayerOneScore());
+        Assert.assertTrue(tennisGame.hasPlayerOneWon());
     }
 
-    /*@Test
+    @Test
     public void playerTwoWinsFrom40() {
-        tennisGame.score(true, 40, 30);
-        Assert.assertEquals(true, tennisGame.hasWon(40, 30));
-    }*/
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        Assert.assertTrue(tennisGame.hasPlayerTwoWon());
+    }
 
     @Test
     public void playerOneWinsFromAce() {
-        //tennisGame.score(true, 40, 30);
-        Assert.assertEquals(true, tennisGame.hasWon(65, 40));
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerOneScorePoint();
+        Assert.assertTrue(tennisGame.hasPlayerOneWon());
     }
 
     @Test
     public void playerTwoWinsFromAce() {
-        //tennisGame.score(true, 40, 30);
-        Assert.assertEquals(true, tennisGame.hasWon(65, 40));
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+        tennisGame.playerOneScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+        tennisGame.playerTwoScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+
+        tennisGame.playerTwoScorePoint();
+        Assert.assertTrue(tennisGame.hasPlayerTwoWon());
     }
 }

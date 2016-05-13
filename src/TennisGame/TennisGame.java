@@ -1,20 +1,36 @@
 package TennisGame;
 
+import java.util.Scanner;
+
 public class TennisGame {
 
     private int playerOneScore;
     private int playerTwoScore;
     private static final int ace = 65;
 
-    public void main(String[] args) {
-        //enter '1' when player one scores or '2' if player two scores
-        //if scanner = '1' then
-        score(true, playerOneScore, playerTwoScore);
-        //else if scanner = '2' then
-        score(false, playerTwoScore, playerOneScore);
-        hasWon(playerOneScore, playerTwoScore);
-
-        checkIfAce();
+    public static void main(String[] args) {
+        TennisGame tennisGame = new TennisGame();
+        tennisGame.startGame();
+        Scanner scan = new Scanner(System.in);
+        while (!tennisGame.gameHasBeenWon()) {
+            System.out.println("Enter '1' if player one has scored or '2' if player two has scored.");
+            int chooseScorer = scan.nextInt();
+            if (chooseScorer == 1) {
+                tennisGame.playerOneScorePoint();
+                if(tennisGame.hasPlayerOneWon()){
+                    System.out.println("Player One has won.");
+                } else {
+                    System.out.println("Player One: " + tennisGame.getPlayerOneScore() + " - Player Two: " + tennisGame.getPlayerTwoScore());
+                }
+            } else if (chooseScorer == 2) {
+                tennisGame.playerTwoScorePoint();
+                if(tennisGame.hasPlayerTwoWon()){
+                    System.out.println("Player Two has won.");
+                } else {
+                    System.out.println("Player One: " + tennisGame.getPlayerOneScore() + " - Player Two: " + tennisGame.getPlayerTwoScore());
+                }
+            }
+        }
     }
 
     public void startGame() {
@@ -22,20 +38,10 @@ public class TennisGame {
         playerTwoScore = 0;
     }
 
-    public int score(boolean playerOneHasScored, int scoringPlayersCurrentScore, int otherPlayersCurrentScore) {
-        if (playerOneHasScored) {
-            playerOneScore = playerOneScorePoint(scoringPlayersCurrentScore, otherPlayersCurrentScore);
-            return playerOneScore;
-        } else {
-            playerTwoScore = playerTwoScorePoint(scoringPlayersCurrentScore, otherPlayersCurrentScore);
-        }
-        return playerTwoScore;
-    }
-
-    private int playerOneScorePoint(int playerOneScore, int otherPlayersScore) {
-        if (playerOneScore == 40 && otherPlayersScore == 40) {
+    public int playerOneScorePoint() {
+        if (playerOneScore == 40 && playerTwoScore == 40) {
             playerOneScore = ace;
-        } else if (playerOneScore == 40 && otherPlayersScore == 65) {
+        } else if (playerOneScore == 40 && playerTwoScore == 65) {
             playerTwoScore = 40;
         } else if (playerOneScore == 30) {
             playerOneScore += 10;
@@ -45,10 +51,10 @@ public class TennisGame {
         return playerOneScore;
     }
 
-    private int playerTwoScorePoint(int playerTwoScore, int otherPlayersScore) {
-        if (playerTwoScore == 40 && otherPlayersScore <= 40) {
+    public int playerTwoScorePoint() {
+        if (playerTwoScore == 40 && playerOneScore == 40) {
             playerTwoScore = ace;
-        } else if (playerTwoScore == 40 && otherPlayersScore == 65) {
+        } else if (playerTwoScore == 40 && playerOneScore == 65) {
             playerOneScore = 40;
         } else if (playerTwoScore == 30) {
             playerTwoScore += 10;
@@ -58,28 +64,34 @@ public class TennisGame {
         return playerTwoScore;
     }
 
-    private void checkIfAce() {
-        if (playerOneScore == 65) {
-            getAce(playerOneScore);
-        } else if (playerTwoScore == 65) {
-            getAce(playerTwoScore);
+    private boolean checkIfAce(int score) {
+        return score == 65;
+    }
+
+    private String getScore(int score) {
+        if (checkIfAce(score)) {
+            return "A";
         }
+        return String.valueOf(score);
     }
 
-    private String getAce(int playerScore) {
-        System.out.println(String.valueOf(playerScore));
-        return String.valueOf(playerScore);
+    public String getPlayerOneScore() {
+        return getScore(playerOneScore);
     }
 
-    public int getPlayerOneScore() {
-        return playerOneScore;
+    public String getPlayerTwoScore() {
+        return getScore(playerTwoScore);
     }
 
-    public int getPlayerTwoScore() {
-        return playerTwoScore;
+    public boolean gameHasBeenWon(){
+        return hasPlayerOneWon() || hasPlayerTwoWon();
     }
 
-    public boolean hasWon(int scorer, int otherPlayer) {
-        return scorer == 40 && otherPlayer < 40 || scorer == 65 && otherPlayer == 40;
+    public boolean hasPlayerOneWon() {
+        return (playerOneScore > 40 && playerTwoScore < 40) || (playerOneScore > 65 && playerTwoScore == 40);
+    }
+
+    public boolean hasPlayerTwoWon() {
+        return (playerTwoScore > 40 && playerOneScore < 40) || (playerTwoScore > 65 && playerOneScore == 40);
     }
 }
